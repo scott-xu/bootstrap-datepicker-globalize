@@ -1,2 +1,1 @@
-bootstrap-datepicker-globalize
-==============================
+Integrate Bootstrap Datepicker with Globalize
