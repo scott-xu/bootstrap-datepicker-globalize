@@ -46,6 +46,7 @@
                 return Globalize.format(date, format);
             },
             parseDate: function (date, format) {
+                if (date instanceof Date) return date; // Can occurs when date is set programmatically by DatePickerRange/setUTCDate(s)
                 return Globalize.parseDate(date, format) || new Date();
             }
         });
